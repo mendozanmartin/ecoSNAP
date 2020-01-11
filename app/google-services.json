@@ -10,7 +10,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:176982618278:android:9a7e8ae0f7439fd5e78467",
         "android_client_info": {
-          "package_name": "com.android.ecoSNAP"
+          "package_name": "com.example.ecosnap"
         }
       },
       "oauth_client": [

@@ -1,29 +1,25 @@
 package com.example.ecosnap
 
-import android.app.Activity
-import android.content.Context
-import android.content.Intent
+
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import android.widget.EditText
 import com.camerakit.CameraKitView
 
 class MainActivity : AppCompatActivity() {
-    private var cameraKitView : CameraKitView = CameraKitView(this)
+    private lateinit var cameraKitView: CameraKitView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        cameraKitView = findViewById(R.id.camera)
+        actionBar?.hide()
+        supportActionBar?.hide()
 
     }
 
     override fun onStart() {
         super.onStart()
         cameraKitView.onStart()
-    }
-    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        super.onActivityResult(requestCode, resultCode, data)
-
     }
 
     override fun onResume() {
