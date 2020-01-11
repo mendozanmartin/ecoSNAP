@@ -1,45 +1,48 @@
 package com.example.ecosnap
 
+import android.app.Activity
+import android.content.Context
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
+import android.widget.EditText
+import com.camerakit.CameraKitView
 
 class MainActivity : AppCompatActivity() {
-
+    private var cameraKitView : CameraKitView = CameraKitView(this)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        findViewById<Button>(R.id.zxingButton).setOnClickListener {
-            val intent = Intent(this, ScannerActivity::class.java)
-                .apply {
-                    putExtra("provider", "zxing")
-                }
-            startActivityForResult(intent, ZXING_REQUEST_CODE)
-        }
-
-        findViewById<Button>(R.id.googleButton).setOnClickListener {
-            val intent = Intent(this, ScannerActivity::class.java)
-                .apply {
-                    putExtra("provider", "zxing")
-                }
-            startActivityForResult(intent, GOOGLE_REQUEST_CODE)
-        }
     }
 
-
+    override fun onStart() {
+        super.onStart()
+        cameraKitView.onStart()
+    }
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
-        if (requestCode == ZXING_REQUEST_CODE && resultCode == Activity.RESULT_OK) {
-            findViewById<EditText>(R.id.zxingEditText).apply {
-                setText(data?.getStringExtra("barcode"))
-            }
-        }
-        if (requestCode == GOOGLE_REQUEST_CODE && resultCode == Activity.RESULT_OK) {
-            findViewById<EditText>(R.id.googleEditText).apply {
-                setText(data?.getStringExtra("barcode"))
-            }
-        }
+
     }
 
+    override fun onResume() {
+        super.onResume()
+        cameraKitView.onResume()
+    }
 
+    override fun onPause() {
+        cameraKitView.onPause()
+        super.onPause()
+    }
+
+    override fun onStop(){
+        cameraKitView.onStop()
+        super.onStop()
+    }
+
+    override fun onRequestPermissionsResult(requestCode: Int, permissions : Array<String>, grantResults : IntArray) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
+        cameraKitView.onRequestPermissionsResult(requestCode, permissions, grantResults)
+    }
 }
