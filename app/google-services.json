@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "176982618278",
+    "firebase_url": "https://cuhacking2020-ecosnap.firebaseio.com",
+    "project_id": "cuhacking2020-ecosnap",
+    "storage_bucket": "cuhacking2020-ecosnap.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:176982618278:android:9a7e8ae0f7439fd5e78467",
+        "android_client_info": {
+          "package_name": "com.android.ecoSNAP"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "176982618278-mngjc16ohs475cea1t8jpoo2mkvmjrvn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVcKon5YbXM-z2bzTgKZr4fmxoD6lnXAM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "176982618278-mngjc16ohs475cea1t8jpoo2mkvmjrvn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
