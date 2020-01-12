@@ -1,5 +1,5 @@
 # ecoSNAP
-<p align="center>
+<p align="center">
 <img  src = "/READMEImg/ecoSNAP%20(2).png" width = "350" height ="auto"/>
   </p>
 ## Inspiration
