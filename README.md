@@ -32,9 +32,11 @@ Within cuHacks, I learned how to create a dataset from scratch, train an neural 
 The next steps for ecoSNAP are to configure the HTTP requests with a live server, loading a compressed ai directly onto the application to reduce latency, and to feed more data into our algorithm to distinguish more objects and how to appropriately dispose of them. As well, we hope to create small little mini games and quizzes for our users to learn and gain additional points.
 
 ## Screenshots
-<p float="left"><img src="/READMEImg/Screenshot_20200112-111619.jpg" height = "300" width = "auto">
-<img src="/READMEImg/Screenshot_20200112-111831.jpg height = "300" width = "auto">
+<p float="left">
+<img src="/READMEImg/Screenshot_20200112-111619.jpg" height = "300" width = "auto">
+<img src="/READMEImg/Screenshot_20200112-111831.jpg  height = "300" width = "auto">
 <img src="/READMEImg/Screenshot_20200112-111836.jpg" height = "300" width = "auto">
-<img src="/READMEImg/Screenshot_20200112-111842.jpg" height = "300" width = "auto"></p>
+<img src="/READMEImg/Screenshot_20200112-111842.jpg" height = "300" width = "auto">
+                                                                                  </p>
 
 
