@@ -23,8 +23,12 @@ import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.FileProvider
 import com.example.ecosnap.utils.ImageClassifier
+import com.google.firebase.firestore.FirebaseFirestore
+import com.google.firebase.firestore.Query
 import kotlinx.android.synthetic.main.activity_main.*
 import io.reactivex.rxkotlin.subscribeBy
+import kotlinx.android.synthetic.main.another_view.view.*
+import kotlinx.android.synthetic.main.leaderboard_layout.view.*
 import java.io.File
 import java.io.IOException
 import java.text.SimpleDateFormat
@@ -57,6 +61,20 @@ class MainActivity : AppCompatActivity() {
 
             // Inflate a custom view using layout inflater
             val view = inflater.inflate(R.layout.another_view,null)
+            val db = FirebaseFirestore.getInstance()
+            val itemsCollection = db.collection("Items")
+            itemsCollection.orderBy("description", Query.Direction.DESCENDING).get().addOnSuccessListener { result ->
+                var i = 0
+                for (document in result) {
+                    i++
+                    Log.d("MESSAGE", "${document.id} => ${document.data}")
+                    var a = document.data.get("description")
+
+                    view.text_view.text = a.toString()
+
+                }
+            }
+
 
             // Initialize a new instance of popup window
             val popupWindow = PopupWindow(
@@ -89,11 +107,6 @@ class MainActivity : AppCompatActivity() {
             val tv = view.findViewById<TextView>(R.id.text_view)
             val buttonPopup = view.findViewById<Button>(R.id.button_popup)
 
-            // Set click listener for popup window's text view
-            tv.setOnClickListener{
-                // Change the text color of popup window's text view
-                tv.setTextColor(Color.RED)
-            }
 
             // Set a click listener for popup's button widget
             buttonPopup.setOnClickListener{
@@ -131,8 +144,8 @@ class MainActivity : AppCompatActivity() {
                     Log.d("Message", it.toString())
                 }
             )
-            val txt = "BULLSHIT"
-            txt_v.setText("this is some ${txt}")
+            val txt = "Recyclable"
+            txt_v.setText("${txt}")
         }
     }
 }

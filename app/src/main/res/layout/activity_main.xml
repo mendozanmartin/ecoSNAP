@@ -44,7 +44,7 @@
         android:layout_height="51dp"
         android:layout_marginTop="32dp"
         android:gravity="center"
-        android:text="This Image Contains"
+        android:text="This is"
         android:textColor="#BEFFFFFF"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
