@@ -3,6 +3,7 @@ package com.example.ecosnap
 
 import android.os.Bundle
 import android.os.Environment
+import android.provider.MediaStore
 import android.util.Log
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
@@ -63,15 +64,20 @@ class MainActivity : AppCompatActivity() {
     // From button OnClickListener
     private val photoOnClickListener: View.OnClickListener = View.OnClickListener {
         cameraKitView.captureImage { _, capturedImage ->
+
             val savedPhoto =
-                File(this.getExternalFilesDir(null)?.absolutePath, "photo.jpg")
-                Log.d("dir", Environment.getExternalStorageState())
+                File(this.getExternalFilesDir(null)?.path, "photo.jpg")
+            Log.d("MESSAGE", this.getExternalFilesDir(null)?.path)
+
             try {
+                Log.d("MESSAGE", "THIS EXECUTED")
                 val outputStream = FileOutputStream(savedPhoto.path)
                 outputStream.write(capturedImage)
                 outputStream.close()
             } catch (e: IOException) {
                 e.printStackTrace()
+                Log.d("Message", e.toString())
+
             }
         }
     }
