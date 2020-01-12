@@ -1,7 +1,8 @@
 # ecoSNAP
 <p align="center">
-<img  src = "/READMEImg/ecoSNAP%20(2).png" width = "350" height ="auto"/>
+<img  src = "/READMEImg/ecoSNAP%20(2).png" width = "350" height ="auto">
   </p>
+  
 ## Inspiration
 
 Every year, the production of waste increases exponentially. Moreover, it is estimated that humankind currently produces two billion tonnes of waste per year between 7.6 billion people. The people that are affected most about this trend will be the generations that come after us. (https://sensoneo.com/sensoneo-global-waste-index-2019/)
