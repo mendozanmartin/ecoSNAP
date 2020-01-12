@@ -32,27 +32,21 @@ import java.util.*
 
 
 class MainActivity : AppCompatActivity() {
-
-
     private lateinit var classifier: ImageClassifier
     private lateinit var photoImage: Bitmap
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        btn_switch.setOnClickListener {
+            startActivity(Intent(this, LeaderBoardActivity::class.java))
+        }
         var i = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
-        var filename = Environment.getDataDirectory().getPath() + "/test/testfile.jpg"
-        var imageUri = Uri.fromFile(File(filename))
-
-            i.putExtra(MediaStore.EXTRA_OUTPUT, imageUri)
+        startActivityForResult(i, 123)
+        btn_cam.setOnClickListener {
+            var i = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
             startActivityForResult(i, 123)
-
-            btn_cam.setOnClickListener {
-                var i = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
-                startActivityForResult(i, 123)
-
-            }
-
+        }
 
 
 
@@ -125,14 +119,11 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         if(requestCode == 123) {
-            val bmp = data?.extras?.get("data") as Bitmap
-
+            var bmp = data?.extras?.get("data") as Bitmap
             iv_camera.setImageBitmap(bmp)
-
             photoImage = bmp
             classifier = ImageClassifier(getAssets())
             classifier.recognizeImage(photoImage).subscribeBy(
@@ -140,12 +131,8 @@ class MainActivity : AppCompatActivity() {
                     Log.d("Message", it.toString())
                 }
             )
-
             val txt = "BULLSHIT"
             txt_v.setText("this is some ${txt}")
         }
     }
-
-
-
 }
