@@ -7,12 +7,12 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.leaderboard.*
 
 class LeaderBoardActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
-        super.onCreate(savedInstanceState, persistentState)
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
         setContentView(R.layout.leaderboard)
-        LeaderBoard_outline.apply {
-            var layoutManager = LinearLayoutManager( this@LeaderBoardActivity)
-            var adapter = LeaderBoardAdapter()
+        leaderBoard_outline.apply {
+            layoutManager = LinearLayoutManager( this@LeaderBoardActivity)
+            adapter = LeaderBoardAdapter()
         }
     }
 }
