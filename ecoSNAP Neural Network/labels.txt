@@ -1,0 +1,16 @@
+alcohol
+battery
+bottles
+box
+cans
+cellphone
+corks
+crayon
+glass
+glasses
+inhaler
+keys
+mail
+mattress
+newspaper
+runningshoes

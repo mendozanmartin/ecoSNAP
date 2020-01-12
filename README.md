@@ -1,6 +1,8 @@
 # ecoSNAP
-
-<img align = "center" src = "../READMEImg/ecoSNAP (2).jpg" width = "300" height ="auto"/>
+<p align="center">
+<img  src = "/READMEImg/ecoSNAP%20(2).png" width = "500" height ="auto">
+  </p>
+  
 ## Inspiration
 
 Every year, the production of waste increases exponentially. Moreover, it is estimated that humankind currently produces two billion tonnes of waste per year between 7.6 billion people. The people that are affected most about this trend will be the generations that come after us. (https://sensoneo.com/sensoneo-global-waste-index-2019/)
@@ -28,3 +30,8 @@ Within cuHacks, I learned how to create a dataset from scratch, train an neural 
 ## What's next for ecoSNAP
 
 The next steps for ecoSNAP are to configure the HTTP requests with a live server, loading a compressed ai directly onto the application to reduce latency, and to feed more data into our algorithm to distinguish more objects and how to appropriately dispose of them. As well, we hope to create small little mini games and quizzes for our users to learn and gain additional points.
+
+## Screenshots
+|<p><img src="/READMEImg/Screenshot_20200112-111619.jpg" height = "200" width = "auto"></p>|
+|                                                                                          |
+|__________________________________________________________________________________________|
