@@ -12,7 +12,6 @@ import android.widget.ListView
 
 class LeaderBoardActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
-
         super.onCreate(savedInstanceState)
         setContentView(R.layout.leaderboard)
         leaderBoard_outline.apply {
