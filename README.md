@@ -34,7 +34,7 @@ The next steps for ecoSNAP are to configure the HTTP requests with a live server
 ## Screenshots
 <p float="left">
 <img src="/READMEImg/Screenshot_20200112-111619.jpg" height = "300" width = "auto">
-<img src="/READMEImg/Screenshot_20200112-111831.jpg  height = "300" width = "auto">
+<img src="/READMEImg/Screenshot_20200112-111831.jpg"  height = "300" width = "auto">
 <img src="/READMEImg/Screenshot_20200112-111836.jpg" height = "300" width = "auto">
 <img src="/READMEImg/Screenshot_20200112-111842.jpg" height = "300" width = "auto">
                                                                                   </p>
