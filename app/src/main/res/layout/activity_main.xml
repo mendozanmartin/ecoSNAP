@@ -4,66 +4,52 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
-    <com.camerakit.CameraKitView
-        android:id="@+id/camera"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:adjustViewBounds="true"
-        android:keepScreenOn="true"
-        app:camera_facing="back"
-        app:camera_flash="auto"
-        app:camera_focus="continuous"
-        app:camera_permissions="camera"
-        app:layout_constraintBottom_toBottomOf="parent" />
-
-    <FrameLayout
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        >
-
-        <ImageView
-            android:id="@+id/facingButton"
-
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_marginLeft="32dp"
-            android:layout_marginTop="16dp"
-
-            android:src="@drawable/ic_facing_front"
-            android:tint="#EEFFFFFF"
-            app:layout_constraintEnd_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-    </FrameLayout>
-
-
+    tools:context=".MainActivity"
+    >
 
     <ImageView
-        android:id="@+id/captureButton"
-        android:layout_width="66dp"
-        android:layout_height="66dp"
-        android:layout_gravity="center"
-        android:src="@drawable/capture_button"
-        android:layout_marginBottom="32dp"
-
-        app:layout_constraintBottom_toBottomOf="@+id/camera"
+        android:id="@+id/iv_camera"
+        android:layout_width="537dp"
+        android:layout_height="324dp"
+        android:layout_marginTop="56dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_launcher" />
 
-    <ImageView
-        android:id="@+id/flashButton"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_gravity="center"
-        android:src="@drawable/ic_flash_off"
-        android:tint="#EEFFFFFF"
-        android:layout_marginRight="32dp"
-        android:layout_marginTop="16dp"
+    <Button
+        android:id="@+id/btn_cam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="Capture Image"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
 
+    <TextView
+        android:id="@+id/textRes"
+        android:layout_width="0dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="64dp"
+        android:gravity="center"
+        android:text="This Image Contains"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_camera" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="#673AB7"
+        android:textColorHint="#673AB7"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textRes" />
 </androidx.constraintlayout.widget.ConstraintLayout>
