@@ -2,9 +2,12 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
+    android:background="#2d2d2d"
     >
 
     <ImageView
@@ -22,7 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
-        android:text="Capture Image"
+        android:text="Capture Another Image"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -32,24 +35,30 @@
         android:id="@+id/textRes"
         android:layout_width="0dp"
         android:layout_height="51dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="32dp"
         android:gravity="center"
         android:text="This Image Contains"
+        android:textColor="#BEFFFFFF"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/iv_camera" />
 
     <TextView
-        android:id="@+id/textView2"
+
+        android:id="@+id/txt_v"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:nestedScrollingEnabled="false"
+        android:singleLine="false"
         android:text="TextView"
-        android:textColor="#673AB7"
-        android:textColorHint="#673AB7"
+        android:textColor="#6767FC"
+        android:textColorHint="#3F7BAC"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textRes" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
