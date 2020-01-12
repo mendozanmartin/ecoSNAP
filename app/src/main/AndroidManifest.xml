@@ -30,10 +30,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-<<<<<<< HEAD
         <activity android:name=".LeaderBoardActivity"/>
-
-=======
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="com.example.ecosnap.fileprovider"
@@ -43,7 +40,6 @@
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/file_paths"></meta-data>
         </provider>
->>>>>>> dc3b200289d8aedb69b67231b62e88e8f4b03647
     </application>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
