@@ -4,35 +4,23 @@ package com.example.ecosnap
 import android.content.Context
 import android.content.Intent
 import android.graphics.Bitmap
-import android.net.Uri
-import android.graphics.Color
 import android.os.Build
 import android.os.Bundle
-import android.os.Environment
-
 import android.provider.MediaStore
 import android.util.Log
-import android.widget.EditText
 import android.transition.Slide
 import android.transition.TransitionManager
-import android.util.Log.d
 import android.view.Gravity
 import android.view.LayoutInflater
 import android.widget.*
-
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.FileProvider
 import com.example.ecosnap.utils.ImageClassifier
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.Query
 import kotlinx.android.synthetic.main.activity_main.*
 import io.reactivex.rxkotlin.subscribeBy
 import kotlinx.android.synthetic.main.another_view.view.*
-import kotlinx.android.synthetic.main.leaderboard_layout.view.*
-import java.io.File
-import java.io.IOException
-import java.text.SimpleDateFormat
-import java.util.*
+
 
 
 class MainActivity : AppCompatActivity() {
@@ -144,7 +132,7 @@ class MainActivity : AppCompatActivity() {
                     Log.d("Message", it.toString())
                 }
             )
-            val txt = "Recyclable"
+            val txt = "Recyclable content"
             txt_v.setText("${txt}")
         }
     }

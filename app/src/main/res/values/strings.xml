@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">ecoSnap</string>
     <string name="title_activity_leaderboard">Leaderboard</string>
-    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_login">ecoSNAP</string>
     <string name="Email">Email</string>
     <string name="password_title">Password (more than 5 characters)</string>
 </resources>
