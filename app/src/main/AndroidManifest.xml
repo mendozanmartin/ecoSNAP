@@ -9,15 +9,42 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login"
+            android:theme="@style/AppTheme.NoActionBar">
+
+
+        </activity>
+        <activity
+            android:name=".Leaderboard"
+            android:label="@string/title_activity_leaderboard"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
         <activity android:name=".MainActivity">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<<<<<<< HEAD
         <activity android:name=".LeaderBoardActivity"/>
 
+=======
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.ecosnap.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"></meta-data>
+        </provider>
+>>>>>>> dc3b200289d8aedb69b67231b62e88e8f4b03647
     </application>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
 </manifest>
