@@ -1,6 +1,6 @@
 # ecoSNAP
 <p align="center">
-<img  src = "/ecoSNAP Mobile App/READMEImg/ecoSNAPNew.png" width = "500" height ="auto">
+<img  src = "/cuHacking2020-ecoSNAP/READMEImg/ecoSNAPNew.png" width = "500" height ="auto">
   </p>
   
 ## Inspiration
@@ -33,10 +33,10 @@ The next steps for ecoSNAP are to configure the HTTP requests with a live server
 
 ## Screenshots
 <p float="left">
-<img src="/ecoSNAP Mobile App/READMEImg/Screenshot_20200112-111619.jpg" height = "auto" width = "200">
-<img src="ecoSNAP Mobile App/READMEImg/Screenshot_20200112-111831.jpg"  height = "auto" width = "200">
-<img src="ecoSNAP Mobile App/READMEImg/Screenshot_20200112-111836.jpg" height = "auto" width = "200">
-<img src="ecoSNAP Mobile App/READMEImg/Screenshot_20200112-111842.jpg" height = "auto" width = "200">
+<img src="/cuHacking2020-ecoSNAP/READMEImg/Screenshot_20200112-111619.jpg" height = "auto" width = "200">
+<img src="cuHacking2020-ecoSNAP/READMEImg/Screenshot_20200112-111831.jpg"  height = "auto" width = "200">
+<img src="cuHacking2020-ecoSNAP/READMEImg/Screenshot_20200112-111836.jpg" height = "auto" width = "200">
+<img src="cuHacking2020-ecoSNAP/READMEImg/Screenshot_20200112-111842.jpg" height = "auto" width = "200">
                                                                                   </p>
 
 
